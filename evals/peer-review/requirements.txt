@@ -1,0 +1,6 @@
+anthropic==0.42.0
+python-dotenv==1.0.1
+# truststore: makes Python's HTTPS use the OS keychain. Required on networks
+# that do SSL inspection (e.g. corporate Cisco Secure Access / Zscaler / Netskope).
+# Harmless on non-corporate networks.
+truststore>=0.10.0
