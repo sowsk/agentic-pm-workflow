@@ -1,6 +1,6 @@
 ---
 name: evals
-description: Design and run an evaluation suite for a shipping or production AI feature. Use when the user says "design an eval", "set up evals for", "we need to evaluate this AI feature", "how do I test the LLM part of this", or wants to systematically measure whether an AI feature is doing what it's supposed to. Produces a test case set, a scoring rubric, an optional LLM-as-judge prompt, and a runnable evaluation plan grounded in real failure modes rather than synthetic edge cases.
+description: Design and run an evaluation suite for a production AI feature. Use when the user says "design an eval", "set up evals for", "we need to evaluate this AI feature", "how do I test the LLM part of this", or wants to systematically measure whether an AI feature is doing what it's supposed to. Produces a test case set, a scoring rubric, an optional LLM-as-judge prompt, and a runnable evaluation plan grounded in real failure modes rather than synthetic edge cases.
 ---
 
 # Evals Skill
@@ -92,7 +92,7 @@ Aim for 15-30 cases for the first run. Below 10 is too few to see patterns. Abov
 
 ### Step 3: Scoring on two tracks (quant + categorical)
 
-From the [Instagram framing](../../evals/peer-review/scoring-rubric.md): every eval should score on both tracks.
+Every eval should score on two tracks: Quantitative and Categorical.
 
 **Quantitative** (scriptable, no LLM needed):
 - Hard rule assertions (no banned phrases, no banned characters, response within token budget)
