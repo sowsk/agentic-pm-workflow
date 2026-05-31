@@ -51,7 +51,7 @@ A few of these build on prior work:
 - **llm-council** adapts Andrej Karpathy's [LLM Council](https://github.com/karpathy/llm-council) idea. Karpathy dispatched queries to multiple models; this version uses Cursor subagents with different thinking lenses, plus anonymized peer review and a chairman synthesis stage.
 - **peer-review** is inspired by Zevi Arnovitz's "peer review" technique (Lenny's Newsletter, January 2026), adapted for single-model use with three named lenses.
 - **6pager** uses Amazon's 6-pager document structure. The contribution here is the interactive workflow (section-by-section question prompts instead of bulk drafts) and the rule against generating prose before the user has actually thought through each section.
-- **evals** is grounded in Hamel Husain's [eval methodology](https://hamel.dev/blog/posts/evals/), OpenAI's [evals cookbook](https://github.com/openai/evals), Karpathy's "evals are everything" framing, and a PM-side talk on the quantitative + categorical + CI-loop pattern. The contribution is the PM-facing framing (the eval IS the PRD) and the worked example applying it end-to-end to one of the skills in this repo.
+- **evals** is grounded in Hamel Husain's [eval methodology](https://hamel.dev/blog/posts/evals/), OpenAI's [evals cookbook](https://github.com/openai/evals), and Karpathy's "evals are everything" framing. The contribution is the PM-facing framing (the eval IS the PRD) and the worked example applying it end-to-end to one of the skills in this repo.
 
 The other two (`pm-presentation`, `continual-learning`) are original.
 
