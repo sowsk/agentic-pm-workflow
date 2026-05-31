@@ -194,4 +194,4 @@ Do not produce all 5 in a single dump. Walk the user through one at a time. Each
 
 ## Source
 
-Adapted from Hamel Husain's [eval writing](https://hamel.dev/blog/posts/evals/), OpenAI's [evals cookbook](https://github.com/openai/evals), Karpathy's "evals are everything" framing, and an Instagram talk that motivated the quantitative + categorical + CI-loop pattern. Demonstrated end-to-end in [evals/peer-review/](../../evals/peer-review/).
+Adapted from Hamel Husain's [eval writing](https://hamel.dev/blog/posts/evals/), OpenAI's [evals cookbook](https://github.com/openai/evals), and Karpathy's "evals are everything" framing. Demonstrated end-to-end in [evals/peer-review/](../../evals/peer-review/).
