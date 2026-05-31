@@ -26,7 +26,6 @@ A worked example lives at [evals/peer-review/](../../evals/peer-review/) in this
 
 This skill is grounded in three sources and one demonstrated application:
 
-- An Instagram talk by a PM-side practitioner on the demo-vs-production gap, quantitative + categorical scoring, the "golden dataset," and the CI-like continuous loop (this is what motivated the methodology)
 - Hamel Husain's [eval writing](https://hamel.dev/blog/posts/evals/) for the failure analysis pattern, the test case design, and the judge-validation-against-human discipline
 - OpenAI's [evals cookbook](https://github.com/openai/evals) for the JSONL + runner + scoring pattern
 - Andrej Karpathy's "evals are everything" framing: success criteria over step-by-step instructions, build the eval first
