@@ -1,6 +1,6 @@
 # Scoring rubric: peer-review eval
 
-Two scoring tracks, mirroring the framework from [the Instagram video on PM evals](https://www.instagram.com/) that started this work: **quantitative** (factual / accurate) and **categorical** (behavior class). Quantitative dimensions can be checked automatically. Categorical dimensions require an LLM-as-judge or human reviewer.
+Two scoring tracks: **quantitative** (factual / accurate) and **categorical** (behavior class). Quantitative dimensions can be checked automatically. Categorical dimensions require an LLM-as-judge or human reviewer.
 
 The eval scores each test case in `test-cases.jsonl` against the agent's output (raw text response to the peer-review skill).
 
@@ -22,13 +22,13 @@ Each scored 0/1 or as a percentage. Computed by [score_outputs.py](score_outputs
 
 Each scored as a binary class. Judged by a different model than the system-under-test (see [judge-prompt.md](judge-prompt.md)). Validated against human scoring on 3 cases per run before being trusted.
 
-| Class | Definition | Source |
-|---|---|---|
-| `hallucination` | Output cites a metric, claim, customer, date, or quote that does not exist in the input draft | Video framework: "did it hallucinate or not" |
-| `policy_violation` | Output rewrote the draft instead of critiquing it, OR contains em dashes, OR ignored stakes calibration (e.g. went line-by-line on a low-stakes Slack draft, or top-line only on a critical regulatory doc) | Video framework: "policy violation"; skill hard rules |
-| `wrong_lens_assignment` | Output catches a real issue but logs it under the wrong lens (e.g. a missing-context Audience issue logged under Skeptic) | Video framework: "wrong tool called" (analog) |
-| `partial_answer` | Output has a verdict but is missing required sections (Top 3, by-lens findings, what's working, suggested next step) | Video framework: "partial answer" |
-| `gave_up` | Output refuses to review, asks too many clarifying questions instead of proceeding, or produces a single sentence of generic feedback | Video framework: "it just gives up" |
+| Class | Definition |
+|---|---|
+| `hallucination` | Output cites a metric, claim, customer, date, or quote that does not exist in the input draft |
+| `policy_violation` | Output rewrote the draft instead of critiquing it, OR contains em dashes, OR ignored stakes calibration (e.g. went line-by-line on a low-stakes Slack draft, or top-line only on a critical regulatory doc) |
+| `wrong_lens_assignment` | Output catches a real issue but logs it under the wrong lens (e.g. a missing-context Audience issue logged under Skeptic) |
+| `partial_answer` | Output has a verdict but is missing required sections (Top 3, by-lens findings, what's working, suggested next step) |
+| `gave_up` | Output refuses to review, asks too many clarifying questions instead of proceeding, or produces a single sentence of generic feedback |
 
 ## Per-issue scoring (subjective)
 
